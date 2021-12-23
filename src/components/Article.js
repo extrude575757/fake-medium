@@ -21,14 +21,14 @@ const StyledArticle = styled.div`
   }
 `;
 
-const Article = ({ title = "", subtitle = "", paragraphs = [] }) => {
+const Article = ({ title = ""}) => {
   return (
     <StyledArticle>
       <h1>{title}</h1>
-      <h4>{subtitle}</h4>
+      {/* <h4>{subtitle}</h4>
       {paragraphs.map(paragraph => (
         <p key={paragraph.text}>{paragraph.text}</p>
-      ))}
+      ))} */}
     </StyledArticle>
   );
 };
